@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Musig</title>
+</head>
+<body>
+
+<h1>helo</h1>
+
+<table style="width: 100%">
+    <thead>
+    <tr>
+        <th style="text-align: left">Song name</th>
+        <th style="text-align: left">Duration</th>
+    </tr>
+    </thead>
+    <tbody>
+    <br>
+    <tr th:each="song: ${songs}">
+        <td th:text="${song.song_name}"></td>
+        <td th:text="${song.duration}"></td>
+    </tbody>
+</table>
+
+</body>
+</html>
