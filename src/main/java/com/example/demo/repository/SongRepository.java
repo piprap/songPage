@@ -1,6 +1,6 @@
-package dk.clbo.repository;
+package com.example.demo.repository;
 
-import dk.clbo.model.Song;
+import com.example.demo.model.Song;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

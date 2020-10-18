@@ -1,4 +1,4 @@
-package dk.clbo.model;
+package com.example.demo.model;
 
 import javax.persistence.*;
 import java.util.Set;

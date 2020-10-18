@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Album</title>
+</head>
+<body>
+
+<form action="/CreateAlbum" th:object="${Album}" method="post">
+
+    <p>Enter title of the album</p>
+    <input type="text" name="album_name">
+
+    <p>Select an artist</p>
+    <select name="artist_id">
+        <option th:each="artist: ${Artists}" th:value="${artist.id}" th:text="${artist.artist_name}"/>
+    </select>
+
+    <input type="submit" value="Create Album">
+
+</form>
+
+
+</body>
+</html>
